@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> ONLINE TRAIN TICKET DASHBOARD </title>
+</head>
+<body>
+<h1>TICKET DASHBOARD</h1>
+<a href="\form">Ticket Form</a>
+<table border="1" align="center">
+<tr><th>Name</th><th>Gender</th><th>Age</th><th>DateOfJourney</th><th>Coach</th><th>ArrivalPoint</th><th>DestinationPoint</th><th>Edit</th>
+<th>Delete</th></tr>
+{% for x in d:%}
+<tr>
+<td>{{x.1}}</td>
+<td>{{x.2}}</td>
+<td>{{x.3}}</td>
+<td>{{x.4}}</td>
+<td>{{x.5}}</td>
+<td>{{x.6}}</td>
+<td>{{x.7}}</td>
+<td><a href="/edit/{{x.0}}">Edit</a></td>
+<td><a href="/delete/{{x.0}}">Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

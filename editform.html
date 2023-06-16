@@ -1,0 +1,33 @@
+<html>
+		<head>
+			<title>Update Ticket Form</title>
+		</head>
+                <body>
+			<h1>Update Ticket</h1>
+			<form method="POST" action="/update/{{d.0}}">
+				<table>
+					<tr><td>Name:</td>
+						<td><input type="text" name="Name" value="{{d.1}}"/></tr></td>
+				
+					<tr><td>Gender:</td>
+						<td><input type="text" name="Gender" value="{{d.2}}"/></tr></td>
+				
+					<tr><td>Age:</td>
+						<td><input type="int" name="Age"value="{{d.3}}"/></tr></td>
+                                        <tr><td>DateOfJourney:</td>
+						<td><input type="date" name="DateOfJourney" value="{{d.4}}"/></tr></td>
+                                        <tr><td>Coach:</td>
+						<td><input type="text" name="Coach" value="{{d.5}}"/></tr></td>
+                                        <tr><td>ArrivalPoint:</td>
+						<td><input type="text" name="ArrivalPoint" value="{{d.6}}"/></tr></td>
+                                        <tr><td>DestinationPoint:</td>
+						<td><input type="text" name="DestinationPoint" value="{{d.7}}"/></tr></td>
+				
+					<tr><td></td>
+						<td><input type="submit" name="send" value="Update"/></tr><td/>
+				</table>
+			</form>
+
+		</body>
+
+</html>
